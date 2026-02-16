@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pure Beauty | Нишевая косметика</title>
+    <title>Pure Beauty | Главная</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Хедер с логотипом и навигацией -->
+    <!-- Хедер с логотипом и навигацией (ОБНОВЛЕН) -->
     <nav style="background-color: white; border-bottom: 1px solid #dbdbdb;">
         <div style="max-width: 1200px; margin: 0 auto; padding: 0.5rem 1.5rem; display: flex; justify-content: space-between; align-items: center;">
-            <div style="font-weight: bold; font-size: 1.5rem;">Pure Beauty</div>
+            <div style="font-weight: bold; font-size: 1.5rem;">
+                <a href="index.html" style="color: inherit; text-decoration: none;">Pure Beauty</a>
+            </div>
             <div>
-                <span style="margin: 0 1rem;">О нас</span>
-                <span style="margin: 0 1rem;">Каталог</span>
-                <span style="margin: 0 1rem;">Контакты</span>
+                <a href="index.html" style="margin: 0 1rem; color: inherit; text-decoration: none;" class="active">Главная</a>
+                <a href="catalog.html" style="margin: 0 1rem; color: inherit; text-decoration: none;">Каталог</a>
+                <a href="contacts.html" style="margin: 0 1rem; color: inherit; text-decoration: none;">Контакты</a>
+                <a href="faq.html" style="margin: 0 1rem; color: inherit; text-decoration: none;">FAQ</a>
             </div>
         </div>
     </nav>
@@ -25,13 +28,13 @@
     <div class="hero-section">
         <h1 style="font-size: 3rem; font-weight: 600; margin-bottom: 1rem;">Косметика, которой можно доверять</h1>
         <p style="font-size: 1.25rem; color: #4a4a4a; margin-bottom: 2rem;">Нишевые бренды с чистым составом. Быстрая доставка.</p>
-        <div style="background-color: #48c78e; color: white; padding: 0.75rem 2rem; display: inline-block; border-radius: 4px; font-weight: 600;">Начать подбор</div>
+        <a href="catalog.html" style="background-color: #48c78e; color: white; padding: 0.75rem 2rem; display: inline-block; border-radius: 4px; font-weight: 600; text-decoration: none;">Начать подбор</a>
     </div>
 
     <!-- Сетка преимуществ -->
     <div style="max-width: 1200px; margin: 3rem auto; padding: 0 1.5rem;">
         <h2 class="section-title">Наши преимущества</h2>
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;" class="grid-3">
             <div class="feature-box">
                 <div class="feature-icon">🌿</div>
                 <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem;">Натуральные составы</h3>
@@ -54,9 +57,10 @@
     <div class="about-section">
         <div style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
             <h2 class="section-title">О проекте</h2>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;" class="grid-2">
                 <div>
                     <p style="font-size: 1.1rem; line-height: 1.6;">Мы объединяем этичные бренды и осознанных покупателей. Каждый продукт проходит проверку состава. Никаких парабенов и силиконов.</p>
+                    <a href="contacts.html" style="display: inline-block; margin-top: 1rem; color: #48c78e; text-decoration: none;">Связаться с нами →</a>
                 </div>
                 <div class="about-image">
                     Натуральная косметика
@@ -68,7 +72,7 @@
     <!-- Сетка товаров -->
     <div style="max-width: 1200px; margin: 3rem auto; padding: 0 1.5rem;">
         <h2 class="section-title">Рекомендуем</h2>
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;" class="grid-3">
             <!-- Товар 1 -->
             <div class="product-card" style="border: 1px solid #dbdbdb; border-radius: 4px;">
                 <div class="product-image">Крем для лица</div>
@@ -76,7 +80,7 @@
                     <h3 style="font-size: 1.25rem; font-weight: 600;">Увлажняющий крем</h3>
                     <p style="color: #4a4a4a; margin: 0.5rem 0;">Бренд: EcoSkin</p>
                     <p style="font-weight: 600; font-size: 1.1rem;">1 250 ₽</p>
-                    <div style="background-color: #48c78e; color: white; padding: 0.5rem; text-align: center; border-radius: 4px; margin-top: 0.5rem;">В корзину</div>
+                    <a href="catalog.html" style="background-color: #48c78e; color: white; padding: 0.5rem; text-align: center; border-radius: 4px; margin-top: 0.5rem; display: block; text-decoration: none;">В корзину</a>
                 </div>
             </div>
             <!-- Товар 2 -->
@@ -86,7 +90,7 @@
                     <h3 style="font-size: 1.25rem; font-weight: 600;">Сыворотка Vitamin C</h3>
                     <p style="color: #4a4a4a; margin: 0.5rem 0;">Бренд: BrightLab</p>
                     <p style="font-weight: 600; font-size: 1.1rem;">2 100 ₽</p>
-                    <div style="background-color: #48c78e; color: white; padding: 0.5rem; text-align: center; border-radius: 4px; margin-top: 0.5rem;">В корзину</div>
+                    <a href="catalog.html" style="background-color: #48c78e; color: white; padding: 0.5rem; text-align: center; border-radius: 4px; margin-top: 0.5rem; display: block; text-decoration: none;">В корзину</a>
                 </div>
             </div>
             <!-- Товар 3 -->
@@ -96,19 +100,28 @@
                     <h3 style="font-size: 1.25rem; font-weight: 600;">Гидрофильное масло</h3>
                     <p style="color: #4a4a4a; margin: 0.5rem 0;">Бренд: PureStep</p>
                     <p style="font-weight: 600; font-size: 1.1rem;">1 350 ₽</p>
-                    <div style="background-color: #48c78e; color: white; padding: 0.5rem; text-align: center; border-radius: 4px; margin-top: 0.5rem;">В корзину</div>
+                    <a href="catalog.html" style="background-color: #48c78e; color: white; padding: 0.5rem; text-align: center; border-radius: 4px; margin-top: 0.5rem; display: block; text-decoration: none;">В корзину</a>
                 </div>
             </div>
         </div>
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="catalog.html" style="background-color: transparent; color: #48c78e; padding: 0.5rem 2rem; border: 2px solid #48c78e; border-radius: 4px; text-decoration: none;">Смотреть все товары</a>
+        </div>
     </div>
 
-    <!-- Футер -->
+    <!-- Футер (ОБНОВЛЕН) -->
     <div class="footer-section">
         <div style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; flex-wrap: wrap;">
                 <div>
                     <h4 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem;">Pure Beauty</h4>
                     <p>Нишевая косметика с этичным составом.</p>
+                </div>
+                <div>
+                    <a href="index.html" style="color: white; margin: 0 0.5rem; text-decoration: none;">Главная</a>
+                    <a href="catalog.html" style="color: white; margin: 0 0.5rem; text-decoration: none;">Каталог</a>
+                    <a href="contacts.html" style="color: white; margin: 0 0.5rem; text-decoration: none;">Контакты</a>
+                    <a href="faq.html" style="color: white; margin: 0 0.5rem; text-decoration: none;">FAQ</a>
                 </div>
                 <div>
                     <span style="margin: 0 0.5rem; font-size: 1.5rem;">📱</span>
@@ -117,7 +130,7 @@
                 </div>
             </div>
             <div style="text-align: center; padding-top: 1rem; border-top: 1px solid #4a4a4a;">
-                <p>© 2024 Pure Beauty</p>
+                <p>© 2024 Pure Beauty. Все права защищены.</p>
             </div>
         </div>
     </div>

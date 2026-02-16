@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure Beauty | Контакты</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Хедер с логотипом и навигацией -->
+    <nav style="background-color: white; border-bottom: 1px solid #dbdbdb;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0.5rem 1.5rem; display: flex; justify-content: space-between; align-items: center;">
+            <div style="font-weight: bold; font-size: 1.5rem;">
+                <a href="index.html" style="color: inherit; text-decoration: none;">Pure Beauty</a>
+            </div>
+            <div>
+                <a href="index.html" style="margin: 0 1rem; color: inherit; text-decoration: none;">Главная</a>
+                <a href="catalog.html" style="margin: 0 1rem; color: inherit; text-decoration: none;">Каталог</a>
+                <a href="contacts.html" style="margin: 0 1rem; color: inherit; text-decoration: none;" class="active">Контакты</a>
+                <a href="faq.html" style="margin: 0 1rem; color: inherit; text-decoration: none;">FAQ</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Заголовок страницы -->
+    <section class="hero-section" style="padding: 2rem 1.5rem;">
+        <div class="container">
+            <h1 class="title is-1">Контакты</h1>
+            <p class="subtitle is-4">Свяжитесь с нами или оставьте отзыв</p>
+        </div>
+    </section>
+
+    <!-- Контакты и форма -->
+    <section class="section">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
+            <div class="columns" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;" class="grid-2">
+                
+                <!-- Контактная информация -->
+                <div class="contact-info">
+                    <h3 class="title is-4" style="margin-bottom: 2rem;">Наши контакты</h3>
+                    
+                    <p style="margin-bottom: 1rem;">
+                        <span style="font-size: 1.2rem; margin-right: 10px;">📍</span>
+                        <strong>Адрес:</strong> Москва, ул. Тверская, 15
+                    </p>
+                    
+                    <p style="margin-bottom: 1rem;">
+                        <span style="font-size: 1.2rem; margin-right: 10px;">📞</span>
+                        <strong>Телефон:</strong> +7 (999) 123-45-67
+                    </p>
+                    
+                    <p style="margin-bottom: 1rem;">
+                        <span style="font-size: 1.2rem; margin-right: 10px;">✉️</span>
+                        <strong>Email:</strong> info@purebeauty.ru
+                    </p>
+                    
+                    <p style="margin-bottom: 2rem;">
+                        <span style="font-size: 1.2rem; margin-right: 10px;">🕒</span>
+                        <strong>Режим работы:</strong> Пн-Пт 9:00-20:00
+                    </p>
+                    
+                    <h4 class="title is-5" style="margin-top: 2rem;">Мы в соцсетях</h4>
+                    <div style="display: flex; gap: 1rem;">
+                        <span style="font-size: 2rem;">📱</span>
+                        <span style="font-size: 2rem;">💬</span>
+                        <span style="font-size: 2rem;">📺</span>
+                    </div>
+                </div>
+
+                <!-- Форма обратной связи -->
+                <div class="contact-form">
+                    <h3 class="title is-4" style="margin-bottom: 1.5rem;">Оставьте отзыв</h3>
+                    
+                    <form id="feedbackForm">
+                        <!-- Имя -->
+                        <div class="field" style="margin-bottom: 1rem;">
+                            <label class="label">Имя</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Ваше имя" required style="width: 100%; padding: 0.5rem; border: 1px solid #dbdbdb; border-radius: 4px;">
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="field" style="margin-bottom: 1rem;">
+                            <label class="label">Email</label>
+                            <div class="control">
+                                <input class="input" type="email" placeholder="example@email.com" required style="width: 100%; padding: 0.5rem; border: 1px solid #dbdbdb; border-radius: 4px;">
+                            </div>
+                        </div>
+
+                        <!-- Тема (выпадающий список) -->
+                        <div class="field" style="margin-bottom: 1rem;">
+                            <label class="label">Тема</label>
+                            <div class="control">
+                                <select required style="width: 100%; padding: 0.5rem; border: 1px solid #dbdbdb; border-radius: 4px;">
+                                    <option value="" disabled selected>Выберите тему</option>
+                                    <option>Предложение</option>
+                                    <option>Жалоба</option>
+                                    <option>Вопрос</option>
+                                    <option>Благодарность</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Сообщение -->
+                        <div class="field" style="margin-bottom: 1rem;">
+                            <label class="label">Сообщение</label>
+                            <div class="control">
+                                <textarea class="textarea" placeholder="Ваше сообщение..." rows="5" required style="width: 100%; padding: 0.5rem; border: 1px solid #dbdbdb; border-radius: 4px;"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Чекбокс согласия -->
+                        <div class="field" style="margin-bottom: 1.5rem;">
+                            <div class="control">
+                                <label class="checkbox">
+                                    <input type="checkbox" required>
+                                    Соглашаюсь на обработку персональных данных
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Кнопка отправки -->
+                        <div class="field">
+                            <div class="control">
+                                <button class="button" type="submit" style="background-color: #48c78e; color: white; padding: 0.75rem 2rem; border: none; border-radius: 4px; cursor: pointer; font-weight: 600;">
+                                    Отправить отзыв
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер (такой же как на главной) -->
+    <div class="footer-section">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; flex-wrap: wrap;">
+                <div>
+                    <h4 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem;">Pure Beauty</h4>
+                    <p>Нишевая косметика с этичным составом.</p>
+                </div>
+                <div>
+                    <a href="index.html" style="color: white; margin: 0 0.5rem; text-decoration: none;">Главная</a>
+                    <a href="catalog.html" style="color: white; margin: 0 0.5rem; text-decoration: none;">Каталог</a>
+                    <a href="contacts.html" style="color: white; margin: 0 0.5rem; text-decoration: none;">Контакты</a>
+                    <a href="faq.html" style="color: white; margin: 0 0.5rem; text-decoration: none;">FAQ</a>
+                </div>
+                <div>
+                    <span style="margin: 0 0.5rem; font-size: 1.5rem;">📱</span>
+                    <span style="margin: 0 0.5rem; font-size: 1.5rem;">💬</span>
+                    <span style="margin: 0 0.5rem; font-size: 1.5rem;">📺</span>
+                </div>
+            </div>
+            <div style="text-align: center; padding-top: 1rem; border-top: 1px solid #4a4a4a;">
+                <p>© 2024 Pure Beauty. Все права защищены.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Простая обработка формы
+        document.getElementById('feedbackForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Спасибо за ваш отзыв! Мы свяжемся с вами в ближайшее время.');
+            this.reset();
+        });
+    </script>
+
+</body>
+</html>
